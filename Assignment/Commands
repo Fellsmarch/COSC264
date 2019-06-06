@@ -1,0 +1,5 @@
+vim client.py -c ":hardcopy > client.ps" -c ":q"
+vim server.py -c ":hardcopy > server.ps" -c ":q"
+ps2pdf client.ps client.pdf
+ps2pdf server.ps server.pdf
+pdfunite coverSheet.pdf client.pdf server.pdf plagDecCompletedRotated.pdf finalNew.pdf
